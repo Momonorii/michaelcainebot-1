@@ -27,6 +27,16 @@ client.on('messageCreate', message => {
     message.channel.send('Moy name. Is Moichel Caine.');
   }
 });
+client.on('messageCreate', message => {
+  if (message.content === 'What makes you angry?') {
+    message.channel.send('People who are intolerant. And the Dutch.');
+  }
+});
+client.on('messageCreate', message => {
+  if (message.content === 'Michael I accidentally blew up my house.') {
+    message.channel.send('YOU WERE ONLY SUPPOSED TO BLOW THE BLOODY DOORS OFF!');
+  }
+});
 // ...existing code...
 console.log('API_TOKEN:', process.env.API_TOKEN);
 // filepath: d:\michaelcainebot-1\michaelcainebot\index.js
